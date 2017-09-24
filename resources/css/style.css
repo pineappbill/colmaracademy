@@ -1,0 +1,62 @@
+/* Universal Themes */
+html {
+  font-family: Roboto;
+  font-size: 16px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header */
+nav {
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 2.5em;
+}
+
+ul li {
+  display: inline;
+  padding: 0 16px;
+}
+
+.gray {
+    color: gray;
+    padding-left: 0.75px;
+}
+
+/* Main Banner */
+.main-banner {
+    background-color: lightgray;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    padding: 32px 24px;
+}
+
+.main-banner img {
+    width: 60%;
+    display: inline-block;
+}
+
+.main-banner h2 {
+    font-weight: bold;
+}
+
+.content p {
+    background-color: darkgray;
+    padding: 8px 0;
+}
