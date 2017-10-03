@@ -23,23 +23,23 @@ p {
 
 /* Header Section */
 
-header {
+.desktop {
   display: flex;
   align-items: center;
-  height: 64px;
+  height: 4rem;
 }
 
-header img {
-  padding-left: 24px;
+.desktop img {
+  padding-left: 1.5rem;
 }
 
-header h3 {
+.desktop h3 {
   text-transform: uppercase;
   flex-grow: 1;
   font-weight: 500;
 }
 
-header span {
+.desktop span {
   color: rgb(155, 155, 155);
   font-weight: lighter;
 }
@@ -49,18 +49,53 @@ nav ul {
 }
 
 ul li {
-  padding: 0px 8px;
+  padding: 0rem 0.5rem;
 }
 
 li a {
   color: black;
 }
 
+header.mobile {
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  header.desktop {
+    display: none;
+  }
+  
+  header.mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  nav {
+    width: 100%;  
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
 /* Site Container */
 
 .site-container {
   width: 960px;
   margin: 0 auto;
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  .site-container {
+    width: auto;
+  }
 }
 
 /* Learn Something New Everyday Section */
@@ -125,7 +160,7 @@ li a {
 .keep-practicing img {
   max-width: 100%;
   height: auto;
-  padding-right: 24px;
+  padding-right: 1.5rem;
 }
 
 .keep-practicing h1 {
@@ -140,14 +175,16 @@ li a {
 
 .events {
   display: flex;
-  flex-direction: column;
   margin-top: 1rem;
+  flex-direction: column;
+
 }
 
 .event-section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-bottom: 0.5px solid rgb(155, 155, 155);
 }
 
 .event-section:hover {
@@ -194,6 +231,10 @@ li a {
   background-color: white;
   width: 27.5%;
   margin: 1rem 0.75rem 3rem 0.75rem;
+}
+
+.course-section:hover {
+  opacity: 0.7;
 }
 
 .course-section img {

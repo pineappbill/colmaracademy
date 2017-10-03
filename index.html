@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Colmar Academy</title>
-    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
     
-    <header class="site-container">
-        <img src="./resources/images/ic-logo.svg" alt="logo" />
-        <h3>colmar<span>academy</span></h3>
-            <nav>
+    <header class="site-container desktop">
+        <img src="./resources/images/ic-logo.svg" alt="colmar academy logo" />
+        <h3 class="logo">colmar<span>academy</span></h3>
+            <nav class="desktop">
                 <ul>
                     <li><a href="#">On Campus</a></li>
                     <li><a href="#">Online</a></li>
                     <li><a href="#">For Companies</a></li>
                     <li><a href="#">Sign In</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <header class="mobile">
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="logo" /></a></li>
+                    <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="on campus" /></a></li>
+                    <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online" /></a></li>
+                    <li><a href="#"><img src="./resources/images/ic-login.svg" alt="login" /></a></li>
                 </ul>
             </nav>
     </header>
@@ -62,7 +72,7 @@
             </div>
 
             <div class="event-section">
-                <img src=./resources/images/information-campus.jpg alt="students studying next to map on wall" />
+                <img src="./resources/images/information-campus.jpg" alt="students studying next to map on wall" />
                 <div class="event-content">
                     <h3>Our Campus</h3>
                     <p class="event-description">Find which campus is close by you</p>
@@ -154,7 +164,7 @@
     <div class="practice site-container">
 
         <div class="keep-practicing">
-            <video src="./resources/videos/thesis.mp4" width="100%" height="auto" controls></video></video>
+            <video src="./resources/videos/thesis.mp4" width="100%" height="auto" controls></video>
             <h1>Reimagine Urban</h1>
             <p>This semester, we highlight our students award winning thesis as entered in the 28th Annual Washington D.C. "Know Your Stuff" Contest. Academics are only the beginning at Colmar</p>
         </div>
