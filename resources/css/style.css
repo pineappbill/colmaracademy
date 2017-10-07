@@ -160,7 +160,6 @@ header.mobile {
     max-width: 100%;
     margin-bottom: 2rem;
     padding: 0rem;
-
   }
 
   .learn-content {
@@ -206,7 +205,6 @@ header.mobile {
   display: flex;
   margin-top: 1rem;
   flex-direction: column;
-
 }
 
 .event-section {
@@ -246,6 +244,10 @@ header.mobile {
   .events {
     width: 90%;
     align-items: center;
+  }
+
+  .event-section {
+    border: none;
   }
 }
 
@@ -306,16 +308,21 @@ p.course {
   .courses {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .courses img, .courses p {
     display: none;
   }
 
+  .courses h3 {
+    padding-bottom: 1rem;
+  }
+
   .course-section {
     width: 90%;
-    margin: 0rem 0rem 0.5rem 1.5rem;
-    background-color: rgb(216, 216, 216); 
+    margin: 0rem 0rem 0.5rem 0rem;
+    background-color: rgb(216, 216, 216);
   }
 }
 
@@ -355,7 +362,7 @@ footer div {
 
 /* Media Queries */
 @media screen and (max-width: 500px) {
-  ul li {
+  footer ul li {
     display: none;
   }
 
