@@ -48,6 +48,10 @@ nav ul {
   display: flex;
 }
 
+nav li:hover {
+  text-decoration: underline;
+}
+
 ul li {
   padding: 0rem 0.5rem;
 }
@@ -80,6 +84,7 @@ header.mobile {
   nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
   }
 }
 
@@ -142,6 +147,30 @@ header.mobile {
 
 .learn-start a {
   color: white;
+}
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .learn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .learn img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    padding: 0rem;
+
+  }
+
+  .learn-content {
+    max-width: 90%;
+  }
+
+  .learn-start {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* It Doesn't Hurt To Keep Practicing Section */
@@ -208,6 +237,17 @@ header.mobile {
   color: rgb(88, 145, 220);
   margin-top: 1rem;
 }
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .keep-practicing {
+    display: none;
+  }
+
+  .events {
+    width: 90%;
+    align-items: center;
+  }
+}
 
 /* Start Learning Section */
 
@@ -257,6 +297,27 @@ p.course {
 .course-content {
   padding-bottom: 1.5rem;
 }
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .start-learning {
+    background-color: white;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .courses img, .courses p {
+    display: none;
+  }
+
+  .course-section {
+    width: 90%;
+    margin: 0rem 0rem 0.5rem 1.5rem;
+    background-color: rgb(216, 216, 216); 
+  }
+}
 
 /* Thesis Exhibit Section */
 
@@ -290,4 +351,15 @@ footer div {
 
 .terms a {
   color: rgb(155, 155, 155);
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  ul li {
+    display: none;
+  }
+
+  footer div {
+    padding: 1rem 0rem;
+  }
 }
